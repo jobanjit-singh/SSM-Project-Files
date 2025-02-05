@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.baseContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+.container:nth-child(odd) {
+  background-color: red;
+}
+
+.container:nth-child(even) {
+  background-color: white;
+}
+
+.container:nth-child(1) {
+  position: relative;
+}
+
+.blueContainer {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #0000ff;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.blueContainer .starBaseContainer {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
