@@ -1,0 +1,102 @@
+:root {
+  --baseColor: #292929;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.baseContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 40px;
+  gap: 80px;
+}
+
+.contentBaseContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 40px;
+}
+
+.designBaseContainer {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.designBaseContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.contentTitleContainer {
+  /* flex: 1; */
+  font-size: xx-large;
+}
+
+.contentTitleContainer h1 {
+  color: var(--baseColor);
+}
+
+.contentSubtitleContainer {
+  /* flex: 1; */
+  font-size: xx-large;
+  font-weight: 200;
+}
+
+.contentButtonContainer {
+  /* flex: 1; */
+}
+
+.contentButtonContainer button {
+  padding: 10px 25px;
+  color: var(--whiteColor);
+  background-color: var(--baseColor);
+  border-radius: 10px;
+}
+
+.contentButtonContainer button:hover {
+  cursor: pointer;
+}
+
+/* Tablet Device */
+@media (max-width: 1024px) {
+  .baseContainer {
+    background-color: aqua;
+  }
+  .designBaseContainer {
+    background-color: red;
+  }
+}
+
+/* Standard Mobile */
+@media (max-width: 768px) {
+  .designBaseContainer {
+    display: none;
+  }
+  .contentTitleContainer {
+    font-size: medium;
+  }
+}
+
+/* Small Device */
+@media (max-width: 480px) {
+  .designBaseContainer {
+    background-color: yellow;
+  }
+}
