@@ -1,4 +1,4 @@
-let marks = -80;
+let marks = 70;
 
 if (marks <= 0) {
   console.log("Invalid Input");
