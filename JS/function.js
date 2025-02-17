@@ -1,5 +1,12 @@
-function sumOfTwoNumber(a, b) {
-  return a + b;
+function arithmeticOperation(a, b, operation) {
+  switch (operation) {
+    case "+":
+      console.log("Addition Done");
+      return a + b;
+    case "-":
+      console.log("Subtraction Done");
+      return a - b;
+  }
 }
 
 let dogProfile = {
@@ -10,7 +17,7 @@ let dogProfile = {
     console.log(`Bao...Bao..Baaaoooo....${girlFriendName}`);
   },
 };
-let result = sumOfTwoNumber(2, 4);
+let result = arithmeticOperation(2, 4, "-");
 console.log(result);
 console.log(dogProfile.brand);
 console.log(dogProfile.voice("Jully"));
